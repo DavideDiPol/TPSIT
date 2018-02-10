@@ -19,23 +19,25 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnTL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
 
             <Button
+                android:id="@+id/btnTC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnTR"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
         </LinearLayout>
 
         <LinearLayout
@@ -44,24 +46,25 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btnML"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
 
             <Button
+                android:id="@+id/btnMC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnMR"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,24 +73,39 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnBL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
 
             <Button
+                android:id="@+id/btnBC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
 
             <Button
+                android:id="@+id/btnBR"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="click" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="RESTART" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
