@@ -76,11 +76,10 @@ public class Pizzeria extends Thread {
                     socket.close();
                     break;
                 }
-                else {
-                    while(true){
+                else{
+                    while (true){
                         resp +="Vuoi ordinare da mangiare o da bere? (m,b)";
                         out.println(resp);
-                        while(true){
                             boolean isCibo;
                             input = in.readLine();
                             if (input.equals("m")) isCibo = true;
@@ -118,12 +117,19 @@ public class Pizzeria extends Thread {
                             out.println(resp + "Vuoi ordinare altro? (y,n)");
                             input =in.readLine();
                             if (input.equals("n")){
-                                out.println("Arrivederci "+nome+" !");
+                                resp = "Hai ordinato: \n";
+                                for (int i = 0; i<3; i++){
+                                    if(ordiniCibo[i]!=0) resp+=ordiniCibo[i]+" "+menuCibo[i]+"\n";
+                                }
+                                for (int i = 0; i<3; i++){
+                                    if(ordiniBere[i]!=0) resp+=ordiniCibo[i]+" "+menuBere[i];
+                                }
+                                out.println(resp+"Arrivederci "+nome+"!");
                                 socket.close();
                                 break;
                             }
-                        }
-                }
+                        
+                    }
             }
             }
         } catch(IOException e){
